@@ -1,13 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Battambang:wght@100;300;400;700;900&family=Bayon&family=Dangrek&family=Freehand&family=Gelasio:ital,wght@0,400..700;1,400..700&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Hanuman:wght@100..900&family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Luxurious+Roman&family=Metal&family=Miranda+Sans:ital,wght@0,400..700;1,400..700&family=Moul&family=Playwrite+IE:wght@100..400&family=Rubik:ital,wght@0,300..900;1,300..900&family=Story+Script&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Kantumruy Pro", sans-serif;
 }
 .header{
     width: 100vw;
-    height: 300px;
-    background-color: rgb(3, 3, 112);
+    height: 150px;
+    background-color: rgb(23, 58, 103);
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    position: relative;
+    display: flex;
+    align-items: center;
 }
 .logo{
+    width: 50%;
+    height: 100%;
+    display: flex;
     
+}
+.logo h1{
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    left: 100px;
+    top: 30%;
+}
+.logo p{
+    font-size: 10px;
+    color: white;
+    position: absolute;
+    top: 170px;
+    left: 280px;
+}
+.logo img{
+    width: 50px;
+    height: 50px;
+    margin-top: 40px;
+    margin-left: 300px;
+}
+.chooses{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    color: white;
+    font-size: 10px;
+    gap: 60px;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 100px;
+
+}
+.chooses a{
+    color: white;
+    display: flex;
+    text-decoration: none;
+    text-align: center;
+}
+.header a{
+    gap: 5px;
+}
+.chooses1{
+    width: 450px;
+    height: 40px;
+    /* background-color: rgb(251, 255, 0); */
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    border-radius: 10px;
+}
+.chooses1:hover{
+    width: 450px;
+    height: 40px;
+    background-color: rgb(1, 1, 63);
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+.chooses2{
+    width: 450px;
+    height: 40px;
+    /* background-color: rgb(251, 255, 0); */
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    border-radius: 10px;
+}
+.chooses2:hover{
+    width: 450px;
+    height: 40px;
+    background-color: rgb(1, 1, 63) ;
+    transition: all 0.2s ease-in-out;
+    border-radius: 10px;
+}
+.chooses2 >a>.fa-chevron-down{
+    transition: all 0.3s ease-in-out;
+}
+.chooses2 >a:hover> .fa-chevron-down{
+    transition: all 0.1s ease-in-out;
+    transform: rotate(180deg);
+}
+.option{
+    width: 400px;
+    background-color:rgb(1, 1, 61);
+    position: absolute;
+    top: 175px;
+    right: 835px;
+    border-radius: 10px;
+    border: 1px solid rgb(137, 137, 137);
+    display: none;
+    opacity:0;
+    visibility:hidden;
+    transform:translateY(-20px);
+    transition: 0.5s;
+}
+.option a{
+    display: block;
+    padding: 20px 15px;
+    display: block;
+    text-align: right;
+}
+.option a:hover{
+    background:#1b1b88 ;
+}
+.chooses2:hover .option{
+    display: block;
+    transition: 0.5s;
+    /* transform: translate(-20px); */
+    opacity:1;
+    visibility:visible;
+    transform:translateY(0);
+}
+.chooses3{
+    width: 350px;
+    height: 40px;
+    /* background-color: rgb(251, 255, 0); */
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    border-radius: 10px;
+}
+.chooses3:hover{
+    width: 350px;
+    height: 40px;
+    background-color:  rgb(1, 1, 63);
+    border-radius: 10px;
+}
+.chooses4{
+    width: 370px;
+    height: 70px;
+    /* background-color: rgb(251, 255, 0); */
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    border-radius: 10px;
+}
+.chooses4:hover{
+    width: 370px;
+    height: 70px;
+    background-color: rgb(1, 1, 63);
+    border-radius: 10px;
+}
+.chooses4 a{
+    color: gold;
+    border-radius: 10px;
+    
+}
+.icon{
+    font-size: 40px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.manu{
+    width: 100vw;
+    height: 50px;
+    background-color:rgb(1, 1, 61);
 }

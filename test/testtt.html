@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body{
+    background:#0d3b73;
+    font-family:Arial;
+}
+
+.menu{
+    position:relative;
+    display:inline-block;
+    margin:50px;
+}
+
+.menu-btn{
+    color:white;
+    font-size:24px;
+    cursor:pointer;
+    padding:10px;
+}
+
+/* Dropdown Box */
+.dropdown{
+    position:absolute;
+    top:50px;
+    left:0;
+    width:250px;
+    background:#000066;
+    border:1px solid white;
+    border-radius:8px;
+
+    /* លាក់ដំបូង */
+    opacity:0;
+    visibility:hidden;
+
+    /* ឲ្យចាប់ផ្ដើមពីលើ */
+    transform:translateY(-20px);
+
+    transition:0.5s;
+}
+
+.dropdown a{
+    display:block;
+    color:white;
+    padding:15px;
+    text-decoration:none;
+    text-align:right;
+}
+
+.dropdown a:hover{
+    background:#1d1d88;
+}
+
+/* បង្ហាញពេល hover */
+.menu:hover .dropdown{
+    opacity:1;
+    visibility:visible;
+    transform:translateY(0);
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="menu">
+
+<div class="menu-btn">
+ABOUT ACLEDA ▼
+</div>
+
+<div class="dropdown">
+<a href="#">Financial Information</a>
+<a href="#">Bank Profile</a>
+<a href="#">Media</a>
+<a href="#">Career</a>
+<a href="#">Contact Us</a>
+<a href="#">Download Information</a>
+</div>
+
+</div>
+
+</body>
+</html>
